@@ -26,7 +26,7 @@ public class ProductEntityTest {
         assertEquals(product.getPrice(), productDTO.getPrice(), 0.001);
         assertEquals(product.getQuantity(), productDTO.getQuantity());
         assertEquals(product.getCategory(), productDTO.getCategory());
-    
+
     }
 
 
