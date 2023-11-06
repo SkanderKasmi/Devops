@@ -29,18 +29,18 @@ public class ProductController {
     List<Product> retreiveAllProduct(){
         return productService.retreiveAllProduct();
     }
-    @GetMapping("/product/stock/{id}")
-    List<Product> retreiveProductStock(@PathVariable Long id){
-        return productService.retreiveProductStock(id);
-    }
+        @GetMapping("/product/stock/{id}")
+        List<Product> retreiveProductStock(@PathVariable Long id){
+            return productService.retreiveProductStock(id);
+        }
 
-    @GetMapping("/productCategoy/{category}")
-    List<Product> retrieveProductByCategory(@PathVariable ProductCategory category){
-        return productService.retrieveProductByCategory(category);
-    }
+        @GetMapping("/productCategoy/{category}")
+        List<Product> retrieveProductByCategory(@PathVariable ProductCategory category){
+            return productService.retrieveProductByCategory(category);
+        }
 
-    @DeleteMapping("/product/{id}")
-    void deleteProduct(@PathVariable Long id){
-        productService.deleteProduct(id);
-    }
+        @DeleteMapping("/product/{id}")
+        void deleteProduct(@PathVariable Long id){
+            productService.deleteProduct(id);
+        }
 }
