@@ -26,21 +26,6 @@ public class Product implements Serializable {
     @ManyToOne
     @JsonIgnore
     Stock stock;
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Product product = (Product) o;
-        return idProduct.equals(product.idProduct) &&
-                Float.compare(product.price, price) == 0 &&
-                quantity == product.quantity &&
-                category == product.category;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(idProduct, title, price, quantity, category, stock);
-    }
 
 
 
