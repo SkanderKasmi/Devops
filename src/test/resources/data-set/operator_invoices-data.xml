@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dataset>
+    <operator_invoices
+            OPERATOR_ID_OPERATEUR="1"
+            INVOICES_ID_INVOICE="1"
+    />
+
+</dataset>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dataset>
+    <invoice
+            ID_INVOICE="1"
+            amount_discount="20.5"
+            amount_invoice="15.5"
+            date_creation_invoice="2022-10-10"
+            date_last_modification_invoice="2022-10-10"
+            archived="true"
+    />
+</dataset>
