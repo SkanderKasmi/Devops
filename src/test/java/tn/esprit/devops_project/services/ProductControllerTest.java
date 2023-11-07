@@ -69,7 +69,7 @@ public class ProductControllerTest {
     public void testAddProduct() throws Exception {
         Long stockId = 1L;
         ProductDTO productDTO = new ProductDTO();
-        productDTO.setTitle("New Product");
+        productDTO.setTitle("New Product 1 ");
         productDTO.setPrice(30.0f);
         productDTO.setQuantity(5);
         productDTO.setCategory(ProductCategory.BOOKS);
