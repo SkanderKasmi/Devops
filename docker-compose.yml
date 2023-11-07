@@ -29,7 +29,14 @@ services:
       - .m2:/root/.m2
     stdin_open: true
     tty: true
-
+  front:
+    container_name: front
+    depends_on: app
+    image: pikafoc/fronttest:2.0
+    networks:
+      - springapimysql-net
+    ports:
+      - 8085:8085
 volumes:
   db:
 
