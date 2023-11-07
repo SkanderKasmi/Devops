@@ -48,7 +48,7 @@ public class InvoiceControllerTest {
     public void testGetInvoices() throws Exception {
 
         List<Invoice> invoices = new ArrayList<>();
-        invoices.add(new Invoice(/* données factices */));
+        invoices.add(new Invoice());
 
         Mockito.when(invoiceService.retrieveAllInvoices()).thenReturn(invoices);
 
@@ -85,7 +85,7 @@ public class InvoiceControllerTest {
         Long supplierId = 1L;
 
         List<Invoice> invoices = new ArrayList<>();
-        invoices.add(new Invoice(/* données factices */));
+        invoices.add(new Invoice());
 
         Mockito.when(invoiceService.getInvoicesBySupplier(supplierId)).thenReturn(invoices);
 
@@ -104,17 +104,7 @@ public class InvoiceControllerTest {
 
         Mockito.verify(invoiceService, Mockito.times(1)).assignOperatorToInvoice(idOperator, idInvoice);
     }
-//    @Test
-//    public void testGetTotalAmountInvoiceBetweenDates() throws Exception {
-//        String startDate = "2023-01-01";
-//        String endDate = "2023-12-31";
-//        float expectedTotalAmount = 1000.0F;  // Replace with your expected total amount
-//        Mockito.when(invoiceService.getTotalAmountInvoiceBetweenDates(Mockito.any(Date.class), Mockito.any(Date.class)))
-//                .thenReturn(expectedTotalAmount);
-//        mockMvc.perform(MockMvcRequestBuilders.get("/invoice/price/" + startDate + "/" + endDate))
-//                .andExpect(MockMvcResultMatchers.status().isOk())
-//                .andExpect(MockMvcResultMatchers.content().string(String.valueOf(expectedTotalAmount)));
-//    }
+
 
 
 }

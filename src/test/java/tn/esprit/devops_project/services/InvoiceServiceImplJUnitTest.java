@@ -90,7 +90,7 @@ public class InvoiceServiceImplJUnitTest {
         assertEquals(300.0f, totalAmount);
     }
 
- 
+
 
     @Test
     @Order(4)

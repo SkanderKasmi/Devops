@@ -23,8 +23,7 @@ public class InvoiceServiceImplTest {
 
     @Mock
     private InvoiceRepository invoiceRepository;
-    @Mock
-    private SupplierRepository supplierRepository;
+
 
     @Before
     public void init() {
